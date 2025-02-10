@@ -4,3 +4,46 @@ git commit -m "Added .gitignore for KiCad project"
 git push origin main
 git add .
 git commit -m "Initial commit: STM32 Blackpill CAN Schematic"
+# Ignore backup and autosave files
+*.bak
+*.bck
+*.save
+*.tmp
+
+# Ignore KiCad-specific backup files
+*.kicad_pcb-bak
+*.sch-bak
+
+# Ignore KiCad user settings
+*.kicad_prl
+
+# Ignore simulation-related files
+*.cir
+*.raw
+*.log
+
+# Ignore compiled Gerber files (optional, unless sharing production files)
+*.gbr
+*.gbo
+*.gbx
+*.gtl
+*.gts
+*.gbs
+*.gm1
+*.drl
+
+# Ignore output files and reports
+*.rpt
+*.csv
+*.pdf
+*.svg
+*.step
+*.stp
+
+# Ignore library and cache files (only keep if needed)
+*-cache.lib
+*-rescue.lib
+*-rescue.sch
+
+# Ignore build folders (if using KiCad’s 3D viewer exports)
+3D/
