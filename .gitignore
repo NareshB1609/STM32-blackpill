@@ -2,3 +2,5 @@ touch .gitignore
 git add .gitignore
 git commit -m "Added .gitignore for KiCad project"
 git push origin main
+git add .
+git commit -m "Initial commit: STM32 Blackpill CAN Schematic"
